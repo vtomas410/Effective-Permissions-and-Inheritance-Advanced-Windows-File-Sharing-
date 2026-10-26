@@ -93,25 +93,35 @@ Scenario Two:
 
 You are an IT administrator at a company where all employees have access to a shared project folder. However the confidential folder contains sensitive financial data that should not be accessed by John, a member of the employees group. The project folder has read and write permissions for all the employees. You need to block John from opening or reading confidential folder without affecting other employees access. 
 
-Step 1: Create a new folder → name it “Project” 
+**Step 1:** Create a new folder → name it “Project” 
 
-Step 2: Create subfolders: Confidential and Materials.
+**Step 2:** Create subfolders: Confidential and Materials.
+<img width="1000" height="742" alt="10 Create folder - Projects - Create subfolders - Confidential and Materials" src="https://github.com/user-attachments/assets/a382f1a9-1f68-4a08-9650-aea5e6fcd844" />
 
-Step 3: In active directory create the user “John Doe” under User
 
-Step 4: Right click → Sharing Tab→ Share the folder → select Everyone → Select Read/Write
+**Step 3:** In active directory create the user “John Doe” under User
+<img width="1003" height="744" alt="11 Create New User - John Doe " src="https://github.com/user-attachments/assets/6edf9bc2-a4cc-494f-893f-81e4450af439" />
 
-Step 5: Verify under advance sharing → select permissions → then verify
 
-Step 6: Verify the permissions are inherited to the subfolders.
+**Step 4:** Right click → Sharing Tab→ Share the folder → select Everyone → Select Read/Write
+<img width="793" height="535" alt="12 Network access sharing - Select everyone - Read and write" src="https://github.com/user-attachments/assets/c3acdc19-d306-4681-a5ae-6e44c76be0b6" />
 
-Step 7: Right click → Sharing Tab → Share the folder → select Everyone → Verify its selected as Read/Write
+**Step 5:** Verify under advance sharing → select permissions → then verify
 
-Step 8: Next we want to explicitly Deny John on this confidential folder. Right Click → select Sharing Tab → select Edit → Click on Add → Type in John Doe → Select Deny Read
+**Step 6:** Verify the permissions are inherited to the subfolders.
 
-Step 9: Select yes on the Warning Window. This means if a user is a member of two groups, one that is allowed a permission and another that is denied the same permission, the user is denied that permission.
+**Step 7:** Right click → Sharing Tab → Share the folder → select Everyone → Verify its selected as Read/Write
 
-Step 10: Verify the settings are the same for Everyone under materials while under confidential it has an explicit deny permission for John Doe.
+**Step 8:** Next we want to explicitly Deny John on this confidential folder. Right Click → select Sharing Tab → select Edit → Click on Add → Type in John Doe → Select Deny Read
+
+<img width="820" height="691" alt="13 Give John doe Permission only " src="https://github.com/user-attachments/assets/8e3bd781-e88e-4bb3-b44b-0610f26e5e36" />
+
+
+<img width="1025" height="792" alt="14 Successful Test - Denied John Doe to Read folder but can access confidential" src="https://github.com/user-attachments/assets/5380fc90-27d8-406f-9903-61b2dd9706f6" />
+
+**Step 9:** Select yes on the Warning Window. This means if a user is a member of two groups, one that is allowed a permission and another that is denied the same permission, the user is denied that permission.
+
+**Step 10:** Verify the settings are the same for Everyone under materials while under confidential it has an explicit deny permission for John Doe.
 
 **This is how you deny a person or a Specific group.**
 
